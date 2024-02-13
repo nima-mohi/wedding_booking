@@ -1,0 +1,30 @@
+body {
+  background-image:url("b.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat
+  background-attachment: fixed;
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  color: purple;
+  font-family: "Lucida Handwriting", cursive; 
+  text-shadow: 2px 2px 5px grey;
+}
+p {
+  color: purple;
+  font-weight: bold;
+  font-variant: small-caps;
+  text: 2px 2px 5px black;
+}
+h2 {
+  color: purple;
+  font-family: "Lucida Handwriting", cursive;
+  text: 2px 2px 5px white;
+  
+}
+h3 {
+  color: purple;
+  
+}

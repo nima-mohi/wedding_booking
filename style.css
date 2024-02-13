@@ -1,0 +1,44 @@
+body {
+  background-image:url("a.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat
+  background-attachment: fixed;
+  margin: auto;
+  text-align: center;
+  
+  width: 300px;
+  border: 15px solid maroon;
+  padding: 50px;
+  box-shadow: 10px 10px 5px grey;
+  
+}
+h1 {
+  color: lavenderblush;
+  font-family: "Lucida Handwriting", cursive; 
+  text-shadow: 2px 2px 5px maroon;
+}
+p {
+  color: lavenderblush;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-shadow: 2px 2px 5px maroon;
+}
+h2 {
+  color: white;
+  font-family: "Lucida Handwriting", cursive;
+  text-shadow: 2px 2px 5px maroon;
+  
+}
+h3 {
+  color: lavenderblush;
+  text-shadow: 2px 2px 5px black;
+
+}
+label {
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+}
+

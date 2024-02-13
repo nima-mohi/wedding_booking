@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>          
+      <title>Made In Heaven</title>
+      <link rel="stylesheet" href="style.css">
+      <script>
+             function calc()
+	     {
+		var a=0,b=0;
+                var c = parseInt(document.getElementById('type').value);
+                a=c+0;
+                var c1 = document.getElementById('c1');  
+                var c2 = document.getElementById('c2');
+		var c3 = document.getElementById('c3');  
+                var c4 = document.getElementById('c4');
+                var c5 = document.getElementById('c5');  
+                var c6 = document.getElementById('c6');
+		var c7 = document.getElementById('c7');  
+                var c8 = document.getElementById('c8');
+                var c9 = document.getElementById('c9');  
+                var c10 = document.getElementById('c10');
+                if (c1.checked == true){  
+		w = parseInt(document.getElementById('c1').value);
+		a = a+w;
+		}
+		if (c2.checked == true){  
+		x = parseInt(document.getElementById('c2').value);
+		a = a+x;
+		}
+		if (c3.checked == true){  
+		y = parseInt(document.getElementById('c3').value);
+		a = a+y;
+		}
+		if (c4.checked == true){  
+		z = parseInt(document.getElementById('c4').value);
+		a = a+z;
+		}
+                if (c5.checked == true){  
+		p = parseInt(document.getElementById('c5').value);
+		a = a+p;
+		}
+		if (c6.checked == true){  
+		q = parseInt(document.getElementById('c6').value);
+		a = a+q;
+		}
+		if (c7.checked == true){  
+		r = parseInt(document.getElementById('c7').value);
+		a = a+r;
+		}
+		if (c8.checked == true){  
+		s = parseInt(document.getElementById('c8').value);
+		a = a+s;
+		}
+		if (c9.checked == true){  
+		t = parseInt(document.getElementById('c9').value);
+		a = a+t;
+		}
+		if (c10.checked == true){  
+		u = parseInt(document.getElementById('c10').value);
+		a = a+z;
+		}
+		document.getElementById('total').value = a;
+            }
+</script>              
+</head>
+<a href="2.html">  
+<button class="home" type="button">HOME</button>
+</a>
+<body style="alignment :center"> 
+<h1 style="text-align:center;">"Welcome To Made In Heaven"</h1>
+<h2 style="text-align:center;">Your Wedding,Your Way</h2>
+<h3>Please Enter Your Details And Select Your Preferences</h3>
+<form name="3" action="http://localhost:8000/3.php" method="post">
+<label> First Name:</label>&nbsp
+<input type="text" id="fname" name="fname" placeholder="Please Enter Your First Name" required>
+<br><br>
+<label> Last Name: </label>&nbsp 
+<input type="text" id="lname" name="lname" placeholder="Please Enter Your Last Name" required>
+<br><br>
+<label> Email: </label>&nbsp
+<input type="email id="email" name="email" placeholder="Please Enter A Valid Email-Id" required>
+<br><br>
+<label>Phone Number:</label>&nbsp
+<input type="text" id="phn" name="phn" placeholder="Without Country Code" required>
+<br><br>
+<label>Date Of Wedding:</label>&nbsp
+<input type="date" id="weddate" name="weddate">
+<br><br>
+<label> Address:</label>&nbsp
+<input type="text" id="place" name="place" placeholder="Enter Address" required>
+<br><br>
+<label> State:</label>&nbsp
+<input type="text" id="state" name="state" placeholder="Enter State" required>
+<br><br>
+<label> District:</label>&nbsp
+<input type="text" id="dist" name="dist" placeholder="Enter District" required>
+<br><br>
+<label> Pin Code:</label>&nbsp
+<input type="text" id="pin" name="pin" placeholder="PIN" required>
+<br>
+<p>Choose Type Of Wedding Preferred:</p>
+<select id="type" name="type" placeholder="Choose">
+	<option value="50000">Destination Wedding</option>
+	<option value="20000" selected>Home Wedding</option>
+</select>
+<br>
+<p> Enter Number Of Guests</p>
+<input type="number" id="no" name="no" min="25" placeholder="Enter Number">
+<br>	
+<p>Please Check The Services You Require:</p>
+  <div>
+  <input type="checkbox" id="c1" name="s1" value="50000">
+  <label for="Caterer"> Caterer </label><br>
+  <input type="checkbox" id="c2" name="s2" value="5000">
+  <label for="Baker"> Cake Baker</label><br>
+  <input type="checkbox" id="c3" name="s3" value="4000">
+  <label for="Photographer"> Photographer</label><br>
+  <input type="checkbox" id="c4" name="s4" value="25000">
+  <label for="Music"> DJ/Band </label><br>
+  <input type="checkbox" id="c5" name="s5" value="5000">
+  <label for="Flowers"> Florist</label><br>
+  <input type="checkbox" id="c6" name="s6" value="20000">
+  <label for="Dress"> Wedding Attire</label><br>
+  <input type="checkbox" id="c7" name="s7" value="20000">
+  <label for="Makeup"> Hair & Makeup </label><br>
+  <input type="checkbox" id="c8" name="s8" value="12000">
+  <label for="Video"> Videographer</label><br>
+  <input type="checkbox" id="c9" name="s9" value="6000">
+  <label for="Decos"> Decorations</label><br>
+  <input type="checkbox" id="c10" name="s10" value="7000">
+  <label for="Transport"> Transportation</label><br><br>
+  </div>
+<label>Please Let Us Know Your Queries If Any:</label><br>
+<textarea name="services" rows=5 cols=40 placeholder="optional"></textarea> 
+<br>
+<hr>
+<label for="total"><b>An approximate amount of your order would be  : </b></label>
+<input type="button" class="bill" value="Generate Bill" onclick="calc();" >
+<br>
+<label>RS.</label>
+<input type='text' id='total' name='total'>
+<br>&nbsp&nbsp&nbsp&nbsp
+<input type="submit" onclick="confirmorder()" class="ord" name="confirm" value="Book Appointment">  
+<br>
+
+<script>
+    
+      function confirmorder() {
+        var m;
+      if (confirm("Book Your Appointment with our Manager?"))
+      {
+          m = "a";
+      }
+      else {
+        event.preventDefault();
+
+      }
+      }
+
+      
+</script>
+</form>  
+</body>
+</html>
